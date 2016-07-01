@@ -65,10 +65,10 @@ static CGSize MakeVideoSize(CGSize videoSize, float requestedWidth) {
     }
     
     if (self.sizeAsSquare) {
-        if (videoSize.width > videoSize.height) {
-            outputSize.width = videoSize.height;
+        if (outputSize.width > outputSize.height) {
+            outputSize.width = outputSize.height;
         } else {
-            outputSize.height = videoSize.width;
+            outputSize.height = outputSize.width;
         }
     }
     
